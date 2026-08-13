@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8" />
+<title>KEROS — redirecionando</title>
+<script>(function(){var p=(location.pathname.replace(/^\/+/,'').replace(/\/+$/,'').split('?')[0]||'');var known=['empresa','marcas','produtos','qualidade','estrutura','carreiras','contato','fale-conosco','sac','comercial','representantes','fornecedores','faq','politica-de-privacidade','termos-de-uso'];var segs=p?p.split('/'):[];var match=null;for(var j=0;j<segs.length;j++){if(known.indexOf(segs[j])!==-1){match=segs.slice(j).join('/');break;}}function go(base){var route=match||p;if(route){location.replace(base+'?from='+encodeURIComponent(route));}else{location.replace(base);}}async function probe(){var bases=['','/'];if(segs.length>0&&known.indexOf(segs[0])===-1){bases.push('/'+segs[0]);}for(var b of bases){try{var r=await fetch((b===''?'/':b)+'content-gh.json',{method:'GET',cache:'no-store'});if(r.ok){go(b===''?'/':b);return;}}catch(e){}}go('/'+'?from='+encodeURIComponent(p));}probe();})()</script>
+<meta http-equiv="refresh" content="5;url=/" /><noscript><meta http-equiv="refresh" content="0;url=/" /></noscript></head>
+<body><p>Redirecionando...</p></body></html>
