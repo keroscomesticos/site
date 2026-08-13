@@ -51,6 +51,7 @@ O site funciona nas duas versões com as mesmas 18 páginas institucionais, as 1
 | Textos, marcas, produtos, telefones, e-mail, WhatsApp, FAQ, SEO | Abra `content-gh.json` em qualquer editor de texto, edite os valores e reenvie ao GitHub (commit + push). Estrutura comentada e simples. |
 | Imagens | Substitua ou adicione arquivos em `images/` com o mesmo padrão de nome (`XX_nome.jpg`) e referencie o mesmo caminho no `content-gh.json`. |
 | Aplicar a mudança | Após o commit, o site atualiza sozinho em cerca de 1 a 3 minutos. |
+| Receber uma nova versão do pacote | Substitua **todos** os arquivos do repositório pelo conteúdo do novo `keros-site-raiz-github.zip` (ou da pasta `dist-github/`), em especial `index.html`, `404.html`, `content-gh.json` e a pasta `assets/`. **Não mantenha arquivos antigos** no repositório: bundles antigos de JavaScript causam páginas em branco ou travadas. |
 
 **Limitações da versão estática:** o painel administrativo (`/admin`) não está disponível e os formulários (contato, SAC, representantes, fornecedores, banco de talentos) não gravam dados — por isso, em sites estáticos, recomenda-se direcionar o visitante ao WhatsApp/e-mail para contato. Os dados dos formulários e o gerenciamento de conteúdo pela web só estão disponíveis na versão com servidor (Parte 2).
 
